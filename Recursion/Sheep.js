@@ -15,11 +15,3 @@ const sheepCount = function(sheep) {
 sheepCount(3)
 
 
-// Power calculator
-
-function powerCalculator(base, expo){
-   return Math.pow(base,expo)
- }
- 
- powerCalculator(5,3)
- 
