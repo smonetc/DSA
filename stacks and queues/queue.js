@@ -1,5 +1,7 @@
 //queue
 
+// Creates a node containing the data and a reference to the next item
+
 class _Node {
    constructor(value) {
        this.value = value;
@@ -7,6 +9,7 @@ class _Node {
    }
 }
 
+// demonstrates the first and last in a queue. Currently the queue is empty 
 class Queue {
    constructor() {
        this.first = null;

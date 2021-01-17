@@ -9,7 +9,7 @@ class _Node {
 
 class Stack {
    constructor() {
-       this.top = null;
+       this.top = null; //indicates top of stack
    }
 
    push(data) {
@@ -45,7 +45,9 @@ starTrek.push('McCoy');
 starTrek.push('Scotty');  
 
 const peek = stack => {
-   if(stack.top === null){return null}
+   if(stack.top === null){
+      return null
+   }
    return stack.top.data
 }
 
@@ -61,5 +63,5 @@ const display = stack => {
    }
 }
 
-starTrek.pop()
-starTrek.pop()
+console.log(starTrek.pop())
+console.log(starTrek.pop()) //this second function call removes McCoy
