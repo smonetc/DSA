@@ -3,10 +3,10 @@
 // 1. What is the Big O for this?
 
    //1)
-   //  Logarithmic time
+   //  Logarithmic time or polynomial time
 
    // 2)
-   // Constant time
+   // Linear time
 
 // 2. Even or odd
 
@@ -50,3 +50,14 @@ function doubleArrayValues(array) {
 
 //Linear - will grow with the input size
 
+//5. Naive search
+
+function naiveSearch(array, item) {
+   for (let i = 0; i < array.length; i++) {
+       if (array[i] === item) {
+           return i;
+       }
+   }
+}
+
+//Logarithmic Time

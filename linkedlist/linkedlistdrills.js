@@ -102,12 +102,17 @@ function main() {
 
    SLL.remove("Tauhida");
 
-   console.log(display(SLL)); // original display test
-   console.log(listSize(SLL)); //returns the size of the linked list
-   console.log(isEmpty(SLL)); // finds if the list is empty or not (without using the size() function)
-   console.log(findLast(SLL)); //returns the last node in the linked list
-   console.log(findPrev(SLL, "Boomer")); //finds the node before the item you are looking for
-   console.log(findThird(SLL));
-   console.log(findMid(SLL));
+console.log(display(SLL)); // original display test
+console.log(listSize(SLL)); //returns the size of the linked list
+console.log(isEmpty(SLL)); // finds if the list is empty or not (without using the size() function)
+console.log(findLast(SLL)); //returns the last node in the linked list
+console.log(findPrev(SLL, "Boomer")); //finds the node before the item you are looking for
+console.log(findThird(SLL));
+console.log(findMid(SLL));
+
 }
 
+//Mystery Program
+// function is looping through the linked list looking for dupes, linear time 
+
+module.exports = LinkedList

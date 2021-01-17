@@ -68,4 +68,34 @@ class Array {
 }
 Array.SIZE_RATIO = 3;
 
+function main(){
 
+   Array.SIZE_RATIO = 3;
+
+   // Create an instance of the Array class
+   let arr = new Array();
+
+   // Add an item to the array
+   arr.push(3); //length= 1, capacity= 3 ptr = 0
+   arr.push(5); //length =2, capacity = 3
+   arr.push(15); //length = 3, capacity = 9 ptr = 3
+   arr.push(19); //length = 4, capacity =  9
+   arr.push(45); //length = 5, capacity = 9
+   arr.push(10); //length = 6, capacity = 9
+
+   arr.pop();
+   arr.pop();
+   arr.pop();
+
+   console.log(arr);
+   console.log(arr.get(0))
+
+   arr.remove(2);
+   arr.remove(1);
+   arr.remove(0);
+   arr.push("tauhida");
+
+   console.log(arr.get(0))
+}
+
+//resize method makes space for additional items.
